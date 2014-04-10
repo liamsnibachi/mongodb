@@ -1,20 +1,28 @@
 package fr.schibani.mongo.bean;
 
+public class Site {
 
-public class Client {
-
-	private Long clientId;
+	private Long siteId;
 	private String raisonSocial;
-	private String email;
 	private String adresse1;
 	private String codePostal;
-
-	public Long getClientId() {
-		return clientId;
+	private String ville;
+	private Client client;
+	
+	public Client getClient() {
+		return client;
 	}
 
-	public void setClientId(Long clientId) {
-		this.clientId = clientId;
+	public void setClient(Client client) {
+		this.client = client;
+	}
+
+	public Long getSiteId() {
+		return siteId;
+	}
+
+	public void setSiteId(Long siteId) {
+		this.siteId = siteId;
 	}
 
 	public String getRaisonSocial() {
@@ -23,14 +31,6 @@ public class Client {
 
 	public void setRaisonSocial(String raisonSocial) {
 		this.raisonSocial = raisonSocial;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
 	}
 
 	public String getAdresse1() {
@@ -49,4 +49,11 @@ public class Client {
 		this.codePostal = codePostal;
 	}
 
+	public String getVille() {
+		return ville;
+	}
+
+	public void setVille(String ville) {
+		this.ville = ville;
+	}
 }
